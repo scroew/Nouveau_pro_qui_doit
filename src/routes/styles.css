@@ -1,95 +1,101 @@
 @import '@fontsource/fira-mono';
-
-:root {
-	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
-	--color-bg-0: rgb(202, 216, 228);
-	--color-bg-1: hsl(209, 36%, 86%);
-	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #ff3e00;
-	--color-theme-2: #40b3ff;
-	--color-text: rgba(0, 0, 0, 0.7);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
-	font-family: var(--font-body);
-	color: var(--color-text);
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
-	min-height: 100vh;
-	margin: 0;
-	background-attachment: fixed;
-	background-color: var(--color-bg-1);
-	background-size: 100vw 100vh;
-	background-image: radial-gradient(
-			50% 50% at 50% 50%,
-			rgba(255, 255, 255, 0.75) 0%,
-			rgba(255, 255, 255, 0) 100%
-		),
-		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
+    font-family: 'Lato', sans-serif;
+    background-color: #141414;
+    padding: 0;
+    margin: 0;
+    color: #fff;
 }
 
-h1,
-h2,
-p {
-	font-weight: 400;
+body .page{
+  margin: 20px 80px;
+}
+/*Barre de navigation*/
+
+nav{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*permet de fixer la barre de nav*/
+  position: sticky;
+  top:0;
+  /*permet d'afficher la barre de nav'*/
+  background-color: #141414;
+  padding: 10px 0px;
+
 }
 
-p {
-	line-height: 1.5;
+nav .onglets{
+  display: flex;
+  flex-wrap: wrap;
+  /* afin de décaler et d'aligner */
+  margin-top: 5px;
 }
 
-a {
-	color: var(--color-theme-1);
-	text-decoration: none;
+nav .onglets a{
+  margin-right: 20px;
+  cursor: pointer;
+  /*Pour ne pas rendre visible les href*/
+  text-decoration: none;
+  color: #fff;
 }
 
-a:hover {
-	text-decoration: underline;
+nav .buttons button{
+padding: 13px 20px;
+color: #fff;
+border:none;
+font-size: 15px;
+cursor:pointer;
+outline: none;
 }
 
-h1 {
-	font-size: 2rem;
-	text-align: center;
+nav .buttons .login{
+background-color: inherit;
+margin-right: 10px;
+color: #8f8f8f;
 }
 
-h2 {
-	font-size: 1rem;
+nav .buttons .register{
+  background-color: #f54266;
+  margin-right: 10px;
+  color: #fff;
+  }
+  
+/*Barre de navigation*/
+
+/*Partie Header*/
+header{
+    margin-top: 40px;
+    background:url('https://officialpsds.com/imageview/rn/62/rn6205_large.png?15213164');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: 400px 400px;
 }
 
-pre {
-	font-size: 16px;
-	font-family: var(--font-mono);
-	background-color: rgba(255, 255, 255, 0.45);
-	border-radius: 3px;
-	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-	padding: 0.5em;
-	overflow-x: auto;
-	color: var(--color-text);
+header h1{
+  text-align: center;
+  font-size: 60px;
+  padding: 150px;
+}
+/*Fin de Partie Header*/
+
+/*Pied de page*/
+footer{
+  background-color: #1a1a1a;
+  padding: 25px 100px;
+  color: #828282
 }
 
-.text-column {
-	display: flex;
-	max-width: 48rem;
-	flex: 0.6;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0 auto;
+footer .colonnes{
+ display: flex;
+ flex-wrap:wrap;
+ justify-content: space-between;
+
 }
 
-input,
-button {
-	font-size: inherit;
-	font-family: inherit;
-}
+@media screen and (max-width: 640px){ body .page{margin: 10px;} nav .onglets{display: none;} header{margin-top: 20px; background-size: 250px 250px;} header h1{font-size: 30px; padding: 100px;}}
+/*Fin du pied de page*/
 
-button:focus:not(:focus-visible) {
-	outline: none;
-}
-
-@media (min-width: 720px) {
-	h1 {
-		font-size: 2.4rem;
-	}
-}

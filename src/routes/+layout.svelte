@@ -10,44 +10,45 @@
 		<slot />
 	</main>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+<footer>
+
+      <h5>Des questions ? Appelez le 0474-989-756</h5>
+      <div class="colonnes">
+
+      <div class="colonne">
+          <p>Relations clients</p>
+          <p>Relations Investissseurs</p>
+          <p>Modes de lecture</p>
+          <p>Mentions légales</p>
+      </div>
+      <div class="colonne">
+          <p>Centre d'aide</p>
+          <p>Les meilleurs protecteurs</p>
+          <p>Entreprise mondiale</p>
+          <p>Chiffre d'affaire</p>
+          <p>Les arbres</p>
+      </div>
+
+      <div class="colonne">
+          <p>FAQ</p>
+          <p>Recrutement</p>
+          <p>Conditions d'utilisation</p>
+          <p>Nous contacter</p>
+      
+      </div>
+      <div class="colonne">
+
+          <p>Compte</p>
+          <p>S'enregistrer</p>
+          <p>Se connecter</p>
+          <p>Nous contacter</p>
+      
+      </div>
+      
+      </div>
+
+ 				<p>CROENNE Maxime codeur</p>
+				 
+    </footer>
+
 </div>
-
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-</style>
