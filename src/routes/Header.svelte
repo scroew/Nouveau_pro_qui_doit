@@ -5,15 +5,11 @@
     <nav>
 
         <div class="onglets">
-          <a>Mes sociétés</a>
-          <a>Les créations</a>
+          <a href="page2">Mes sociétés</a>
+          <a href="about">Les créations</a>
           <a>Me contacter</a>
         </div>
 
-        <div class="buttons">
-        <button class="login">J'ai déjà un compte</button>
-        <button class="register">S'enregistrer</button>
-        </div>
 
     </nav>
     <!-- Fin de barre de navigation-->
